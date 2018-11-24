@@ -1,0 +1,14 @@
+mybatis:
+  type-aliases-package: com.gc.mybatis.mybatis_gc.domain
+  mapper-locations: classpath:mapper/*.xml
+  configuration:
+      mapUnderscoreToCamelCase: true
+spring:
+  datasource:
+      driver-class-name: com.mysql.jdbc.Driver
+      url: jdbc:mysql://localhost:3306/mybatis?useUnicode=true&characterEncoding=utf8
+      name:
+      username: root
+      password: root
+#logging:
+#  config: classpath:logback/logback-local.xml
